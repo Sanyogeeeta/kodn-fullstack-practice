@@ -1,0 +1,60 @@
+# Coding Guidelines
+
+## Objective
+
+The objective of this coding guideline document is to establish a common set of standards and best practices for writing clean, readable, and maintainable code. It aims to ensure that code clearly communicates intent, reduces ambiguity, and is easy to understand by all team members. These guidelines promote consistency across the codebase, improve collaboration, simplify debugging and maintenance, and support long-term scalability of code.
+
+---
+
+## Meaningful Naming Guidelines
+
+1. Use intention-revealing, self-explanatory, and searchable names (`elapsedTimeInDays` instead of `d`).
+2. Avoid misleading names that suggest incorrect meaning, data type, or behavior (`accounts` instead of `accountList`).
+3. Make names meaningfully distinct and avoid noise words (`ProductPricing` instead of `ProductInfo`).
+4. Use pronounceable names that are easy to discuss (`generationTimestamp` instead of `genymdhms`).
+5. Avoid encodings, unnecessary context, and implementation details in names (`name` instead of `strName`, `Address` instead of `GSDAccountAddress`).
+6. Class names should be nouns or noun phrases and follow PascalCase (`Customer`, `AddressParser`).
+7. Method names should be verbs or verb phrases that clearly describe the action.
+8. Use snake_case for variable and file names.
+9. Maintain consistent terminology across the codebase for similar operations (use `getUser()` consistently instead of mixing `getUser()` and `fetchUser()`).
+
+---
+
+## Functions Guidelines
+
+1. Keep functions small and ensure each function does only one thing.
+2. Maintain a single level of abstraction within a function and avoid mixing high-level logic with low-level details.
+3. Use intention-revealing function names that clearly describe the function’s purpose.
+4. Limit the number of parameters and prefer zero to two parameters wherever possible.
+5. Do not mix commands and queries; a function must either perform an action or return a value.
+6. Handle errors explicitly and consistently using clear error-handling mechanisms.
+7. Avoid flag parameters and split different behaviors into separate functions.
+8. Write deterministic and independent functions that are easy to test.
+9. Prioritize readability and clarity over clever or compact code.
+
+---
+
+## Comments Guidelines
+
+1. Comments should be used only when the intent cannot be clearly expressed through code itself.
+2. Prefer self-explanatory, well-structured code over explanatory comments; refactor unclear code instead of commenting on it.
+3. Write comments to explain why something is done, not what the code is doing.
+4. Ensure comments are accurate, relevant, and kept up to date; remove outdated or misleading comments promptly.
+5. Avoid noise comments, decorative comments, and obvious headers that add no meaningful value.
+6. Use TODO and FIXME comments judiciously and ensure they are tracked and resolved.
+7. Write comments in clear, concise, and complete sentences, following consistent style and placement conventions across the codebase.
+
+---
+
+## Formatting Guidelines
+
+1. Use consistent indentation (e.g., 4 spaces) and avoid mixing tabs and spaces.
+2. Keep lines short and readable (80–120 characters) and break long statements into multiple lines.
+3. Use blank lines to separate logical blocks of code, functions, or sections.
+4. Place opening braces consistently and always use braces for blocks, even for single-line statements.
+5. Maintain consistent spacing around operators, commas, and semicolons.
+6. Keep functions, classes, and methods logically ordered within files.
+7. Limit nesting depth; extract deeply nested code into separate functions for clarity.
+8. Place comments above the code they describe; keep TODOs/FIXMEs aligned with relevant sections.
+9. Use UTF-8 encoding and consistent line endings across all files.
+10. Prioritize readability and visual clarity over clever or compact formatting tricks.
